@@ -1,7 +1,29 @@
 # Health-Connect-Hospital-Management-System
+
 A Full Stack Hospital Management System built with React, Spring Boot, MySQL and Spring Security.
 
+
+
+\## Tech Stack
+
+
+
+\- React
+
+\- Spring Boot
+
+\- Spring Security
+
+\- JWT Authentication
+
+\- MySQL
+
+
+
+
+
 ## Key Features
+
 • Role-based authentication and authorization
 • Patient registration and login
 • Appointment booking and management
@@ -11,3 +33,4 @@ A Full Stack Hospital Management System built with React, Spring Boot, MySQL and
 • Medicine inventory management
 • Automated billing with consolidated charges
 • Administrator dashboard for user management
+
