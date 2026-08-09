@@ -6,6 +6,8 @@ A Full Stack Hospital Management System built with React, Spring Boot, MySQL and
 
 \## Tech Stack
 
+
+
 \- React
 
 \- Spring Boot
