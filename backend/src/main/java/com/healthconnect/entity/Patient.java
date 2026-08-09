@@ -10,17 +10,17 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "doctors")
+@Table(name = "patients")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class Doctor {
+public class Patient {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(length = 50)
+    private String pid;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.REMOVE})
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
@@ -42,15 +42,9 @@ public class Doctor {
     @Column(name = "pin_code")
     private String pinCode;
 
-    private String qualification;
+    @Column(name = "blood_group")
+    private String bloodGroup;
 
-    @Column(name = "experience_years")
-    private Integer experienceYears;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "specialization_id")
-    private Specialization specialization;
-
-    @Column(name = "consultation_fee")
-    private Double consultationFee;
+    private Double height;
+    private Double weight;
 }
