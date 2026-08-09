@@ -1,0 +1,38 @@
+# Auto detect text files and normalize line endings
+* text=auto
+
+# Java
+*.java text
+
+# XML
+*.xml text
+
+# Properties
+*.properties text
+
+# Markdown
+*.md text
+
+# YAML
+*.yml text
+*.yaml text
+
+# Git
+*.gitignore text
+*.gitattributes text
+
+# Shell
+*.sh text eol=lf
+
+# Windows batch
+*.bat text eol=crlf
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# PDFs
+*.pdf binary
